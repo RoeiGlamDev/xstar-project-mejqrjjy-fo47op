@@ -1,0 +1,39 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; // Using a simple sans-serif font
+    background-color: white; // Background color
+    color: #333; // Default text color
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: orange; // Heading color
+  }
+
+  a {
+    color: red; // Link color
+    text-decoration: none; // No underline for links
+  }
+
+  a:hover {
+    text-decoration: underline; // Underline on hover
+  }
+
+  button {
+    background-color: orange; // Button background
+    color: white; // Button text color
+    border: none; // No border
+    padding: 10px 20px; // Padding for buttons
+    cursor: pointer; // Pointer cursor on hover
+  }
+
+  button:hover {
+    background-color: red; // Button hover color
+  }
+
+  // Add more styles as needed
+`;
+
+export default GlobalStyle;
